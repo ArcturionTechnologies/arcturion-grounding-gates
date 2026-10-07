@@ -1,0 +1,38 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          { "type": "command", "command": "grounding-gates hook grounding" },
+          { "type": "command", "command": "grounding-gates hook factual-reminder" }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "AskUserQuestion",
+        "hooks": [
+          { "type": "command", "command": "grounding-gates hook question" }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "AskUserQuestion",
+        "hooks": [
+          { "type": "command", "command": "grounding-gates hook answer-capture" }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          { "type": "command", "command": "grounding-gates hook completion" },
+          { "type": "command", "command": "grounding-gates hook claims" },
+          { "type": "command", "command": "grounding-gates hook factual" },
+          { "type": "command", "command": "grounding-gates hook option-loop" }
+        ]
+      }
+    ]
+  }
+}

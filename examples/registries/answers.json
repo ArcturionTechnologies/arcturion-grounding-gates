@@ -1,0 +1,20 @@
+{
+  "answers": [
+    {
+      "id": "ans-0001",
+      "q": "Which test runner should this repo use for CI?",
+      "a": "The standard library unittest runner, so CI needs no extra installs.",
+      "date": "2026-01-03",
+      "asked_by": "builder",
+      "keywords": ["test", "runner", "repo", "unittest", "ci"]
+    },
+    {
+      "id": "ans-0002",
+      "q": "Should the docs site use a dark theme or a light theme?",
+      "a": "Follow the reader's system setting; ship both.",
+      "date": "2026-01-07",
+      "asked_by": "designer",
+      "keywords": ["docs", "site", "dark", "light", "theme"]
+    }
+  ]
+}

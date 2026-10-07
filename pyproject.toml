@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "arcturion-grounding-gates"
+version = "0.1.0"
+description = "Agent hooks that block unproven claims, force a lookup before answering, and stop re-asking settled questions"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Arcturion Technologies"}]
+
+[project.scripts]
+grounding-gates = "grounding_gates.cli:main"
+
+[tool.setuptools]
+packages = ["grounding_gates"]

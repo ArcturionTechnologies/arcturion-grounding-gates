@@ -1,0 +1,18 @@
+{
+  "directives": [
+    {
+      "id": "sd-001",
+      "issued": "2026-01-02",
+      "status": "live",
+      "text": "Run the full test suite before calling any change done.",
+      "keywords": ["done", "finished", "ship", "merge"]
+    },
+    {
+      "id": "sd-002",
+      "issued": "2026-01-09",
+      "status": "live",
+      "text": "Staging deploys are pre-approved; production deploys need a human go-ahead.",
+      "keywords": ["deploy", "production", "staging", "release"]
+    }
+  ]
+}

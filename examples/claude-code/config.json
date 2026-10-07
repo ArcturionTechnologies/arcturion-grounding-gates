@@ -1,0 +1,8 @@
+{
+  "claims": { "mode": "advise", "max_per_session": 2, "absence_evidence": "searched|secret store|password manager|env" },
+  "completion": { "mode": "block", "tier_b_mode": "off" },
+  "factual": { "mode": "advise" },
+  "option-loop": { "mode": "block" },
+  "question": { "mode": "deny", "craft_lint": true, "exempt_markers": ["did you send", "did you mail"] },
+  "grounding": { "mode": "inject", "min_prompt_chars": 30, "max_chars": 3600 }
+}

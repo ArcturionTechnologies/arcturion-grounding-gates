@@ -1,0 +1,16 @@
+{
+  "routes": [
+    {
+      "job": "secrets / tokens",
+      "tool": "your secret manager's CLI, read into an environment variable",
+      "never": "hard-coding a value, or saying a token is missing before searching",
+      "keywords": ["token", "secret", "credential", "api key"]
+    },
+    {
+      "job": "web research",
+      "tool": "the search tool, citing each source URL",
+      "never": "answering a current-events question from memory",
+      "keywords": ["latest", "current", "research", "look up"]
+    }
+  ]
+}
