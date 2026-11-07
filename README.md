@@ -1,7 +1,8 @@
 # ArcturionGroundingGates
 
-Hooks that make an AI agent prove its claims, look things up before answering,
-and stop re-asking questions that are already settled.
+Configurable hooks that surface relevant context, flag some unsupported claims,
+and help catch repeated questions or premature completion messages. Their
+effect depends on matching rules and the host harness.
 
 Agents that can run tools make a few avoidable mistakes over and over. They
 say "done, it's live" because an API returned 200, without looking at what the
